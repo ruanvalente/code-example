@@ -3,11 +3,11 @@ import routes from './routes'
 
 const app = express()
 
-app.use(routes);
+app.use(routes)
 app.get('/', (request, response) => {
   return response.json({ message: 'Hello World' })
-});
+})
 
 app.listen(3333, () => {
-  console.log('🚀 Server is running on http://localhost:3333');
+  console.log('🚀 Server is running on http://localhost:3333')
 })

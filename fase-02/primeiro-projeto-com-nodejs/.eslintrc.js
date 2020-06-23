@@ -1,39 +1,36 @@
 module.exports = {
   env: {
-    es6: true,
-    node: true
+    es2020: true,
+    node: true,
   },
   extends: [
     'standard',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint'
   ],
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
+    SharedArrayBuffer: 'readonly',
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module'
+    ecmaVersion: 11,
+    sourceType: 'module',
   },
-  plugins: [
-    '@typescript-eslint',
-    'prettier'
-  ],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
+    'prettier/prettier': 'error',
     'import/extensions': [
       'error',
       'ignorePackages',
       {
-        'ts': 'never',
-      }
-    ]
+        ts: 'never',
+      },
+    ],
+    settings: {
+      'import/resolver': {
+        typescript: {},
+      },
+    },
   },
-  'settings': {
-    'import/resolver': {
-      'typescript': {}
-    }
-  },
-  'prettier/prettier': 'error'
 }
