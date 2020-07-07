@@ -22,12 +22,12 @@ Nesta aplicação iremos nos aprofundar no ReactJS onde iremos criar uma aplica�
 Primeiramente clone este repositório.
 
 ```
-git clone https://github.com/ruanvalente/conceitos-reactjs
+git clone https://github.com/ruanvalente/code-example/tree/master/fase-03/github-explore
 ```
-Entre na pasta `conceitos-reactjs` e rode o comando `yarn` ou `npm install`, para instalar as dependências do projeto.
+Entre na pasta `github-explore` e rode o comando `yarn` ou `npm install`, para instalar as dependências do projeto.
 
 ```
-cd conceitos-reactjs
+cd github-explore
 yarn start 
 ```
 
